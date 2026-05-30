@@ -1,0 +1,32 @@
+﻿{
+  "brand": {
+    "name": "Velvet Pour Cafe",
+    "tagline": "Crafted Coffee. Cozy Moments.",
+    "description": "A premium international cafe experience with artisan coffee, curated food, and cozy cinematic ambience.",
+    "shortLabel": "Velvet Pour"
+  },
+  "contact": {
+    "phone": "+1 (415) 555-0188",
+    "email": "hello@velvetpourcafe.com",
+    "address": "241 Artisan Lane, San Francisco, CA 94108"
+  },
+  "hours": [
+    "Mon - Thu: 7:00 AM - 10:00 PM",
+    "Fri - Sat: 7:00 AM - 12:00 AM",
+    "Sun: 8:00 AM - 10:00 PM"
+  ],
+  "hero": {
+    "eyebrow": "Slow Ritual, Modern Luxury",
+    "headline": "Crafted Coffee. Cozy Moments.",
+    "subheadline": "Experience single-origin brews, signature plates, and cinematic ambience designed for warm conversations."
+  },
+  "links": {
+    "websiteUrl": "https://velvetpour.example.com",
+    "ogImage": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80",
+    "whatsapp": "https://wa.me/14155550188"
+  },
+  "demoMode": {
+    "enabled": true,
+    "notice": "This is a frontend-only showcase. Actions are simulated and not persisted."
+  }
+}

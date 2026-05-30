@@ -1,0 +1,106 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 34 50% 96%;
+  --foreground: 18 37% 18%;
+  --card: 36 45% 95%;
+  --card-foreground: 18 37% 18%;
+  --popover: 36 45% 95%;
+  --popover-foreground: 18 37% 18%;
+  --primary: 36 53% 60%;
+  --primary-foreground: 20 46% 13%;
+  --secondary: 34 38% 88%;
+  --secondary-foreground: 20 38% 18%;
+  --muted: 30 32% 90%;
+  --muted-foreground: 24 18% 40%;
+  --accent: 28 44% 84%;
+  --accent-foreground: 20 38% 18%;
+  --destructive: 0 68% 52%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 30 33% 80%;
+  --input: 30 33% 80%;
+  --ring: 36 53% 60%;
+  --radius: 1rem;
+}
+
+.dark {
+  --background: 20 46% 11%;
+  --foreground: 33 47% 92%;
+  --card: 20 39% 14%;
+  --card-foreground: 33 47% 92%;
+  --popover: 20 39% 14%;
+  --popover-foreground: 33 47% 92%;
+  --primary: 38 52% 60%;
+  --primary-foreground: 20 46% 13%;
+  --secondary: 19 26% 21%;
+  --secondary-foreground: 33 47% 92%;
+  --muted: 20 20% 19%;
+  --muted-foreground: 33 16% 68%;
+  --accent: 20 24% 23%;
+  --accent-foreground: 33 47% 92%;
+  --destructive: 0 62% 43%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 20 18% 26%;
+  --input: 20 18% 26%;
+  --ring: 38 52% 60%;
+}
+
+* {
+  @apply border-border;
+}
+
+html,
+body {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-background text-foreground font-body antialiased;
+  background-image: radial-gradient(circle at 10% 10%, rgba(212, 167, 96, 0.14), transparent 40%),
+    radial-gradient(circle at 85% 15%, rgba(139, 94, 60, 0.12), transparent 35%),
+    linear-gradient(to bottom, rgba(248, 242, 231, 0.7), rgba(248, 242, 231, 0.2));
+}
+
+.dark body {
+  background-image: radial-gradient(circle at 15% 5%, rgba(212, 167, 96, 0.1), transparent 40%),
+    radial-gradient(circle at 90% 20%, rgba(91, 58, 43, 0.22), transparent 45%),
+    linear-gradient(to bottom, rgba(45, 27, 20, 0.2), rgba(45, 27, 20, 0.6));
+}
+
+.glass {
+  @apply border border-cafe-gold/20 bg-white/10 backdrop-blur-xl;
+}
+
+.dark .glass {
+  @apply bg-cafe-espresso/40;
+}
+
+.texture-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4a760' fill-opacity='0.08'%3E%3Ccircle cx='12' cy='12' r='1'/%3E%3Ccircle cx='72' cy='24' r='1'/%3E%3Ccircle cx='52' cy='68' r='1'/%3E%3Ccircle cx='102' cy='102' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.swiper-pagination-bullet {
+  background: rgba(212, 167, 96, 0.45) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #d4a760 !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #8a5a44, #d4a760);
+  border-radius: 999px;
+}
